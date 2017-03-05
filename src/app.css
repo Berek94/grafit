@@ -1,0 +1,13 @@
+body {
+    background: white;
+}
+
+.item {
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+    transition: 1s;
+    display: flex;
+}
