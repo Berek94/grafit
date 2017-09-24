@@ -1,3 +1,19 @@
+@import './common-styles/flex-helpers.css';
+
+@font-face {
+	font-family: 'dinPro';
+	font-style: normal;
+	font-weight: 300;
+	src: url('./data/fonts/DINPro-Light.otf');
+}
+
+@font-face {
+	font-family: 'dinPro';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./data/fonts/10421.otf');
+}
+
 body {
 	margin: 0;
 	padding: 0;

@@ -1,16 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import Flex from 'src/common-styles/Flex.css';
-import styles from './styles.css';
+import styles from './HomePageHeader.css';
 import GrafitIcon from 'src/data/icons/GrafitIcon';
 
 export default class HomePageHeader extends React.PureComponent {
 	render() {
 		const className = classNames(
-			Flex.displayFlex,
-			Flex.justifyContentCenter,
-			Flex.alignItemsCenter,
+			'g--display_flex g--justify-content_center g--align-items_center',
 			styles.header
 		);
 

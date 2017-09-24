@@ -1,0 +1,9 @@
+.menu {
+	list-style: none;
+	font-family: 'dinPro';
+}
+
+.menuItem {
+	padding: 10px;
+	text-align: center;
+}
