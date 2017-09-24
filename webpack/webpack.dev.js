@@ -11,9 +11,15 @@ module.exports = merge(common, {
 	module: {
 		rules: [
 			{
-				test: /\.css$/,
-				use: [{loader: 'style-loader'},
-				{
+				test: /\.global\.css$/,
+				use: [{loader: 'style-loader'}, {
+					loader: 'css-loader',
+					options: {sourceMap: true}
+				}],
+			},
+			{
+				test: /^((?!\.global).)*\.css$/,
+				use: [{loader: 'style-loader'}, {
 					loader: 'css-loader',
 					options: {
 						modules: true,

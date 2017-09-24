@@ -1,14 +1,10 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {Provider} from 'react-redux'
 
-import store from './store';
-
-import MainContainer from './containers/MainContainer';
+import './styles.global.css';
+import App from 'src/modules/App';
 
 render(
-	<Provider store={store}>
-		<MainContainer />
-	</Provider>,
+	<App />,
 	document.getElementById('root')
 );

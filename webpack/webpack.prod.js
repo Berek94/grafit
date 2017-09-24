@@ -6,31 +6,42 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path = require('path');
 
+const postcssLoader = {
+	loader: 'postcss-loader',
+	options: {
+		ident: 'postcss',
+		plugins: () => [autoprefixer]
+	}
+}
+
 module.exports = merge(common, {
 	module: {
 		rules: [
 			{
-				test: /\.css$/,
+				test: /\.global\.css$/,
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: [{
+						loader: 'css-loader',
+						options: {
+							minimize: true
+						}
+					}, postcssLoader],
+				}),
+			},
+			{
+				test: /^((?!\.global).)*\.css$/,
 				use: ExtractTextPlugin.extract({	
 					fallback: 'style-loader',
-					use: [
-						{
-							loader: 'css-loader',
-							options: {
-								modules: true,
-								importLoaders: 1,
-								minimize: true,
-								localIdentName: '[name]__[local]___[hash:base64:5]'
-							}
-						},
-						{
-							loader: 'postcss-loader',
-							options: {
-								ident: 'postcss',
-								plugins: () => [autoprefixer]
-							}
+					use: [{
+						loader: 'css-loader',
+						options: {
+							modules: true,
+							importLoaders: 1,
+							minimize: true,
+							localIdentName: '[name]__[local]___[hash:base64:5]'
 						}
-					]
+					}, postcssLoader]
 				})
 			}
 		]
