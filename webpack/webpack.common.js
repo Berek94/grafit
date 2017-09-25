@@ -29,14 +29,7 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				loader: 'url-loader',
-				options: {
-					limit: 10240
-				}
-			},
-			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				test: /\.(woff|woff2|eot|ttf|otf|svg|jpg|jpeg)$/,
 				use: ['file-loader']
 			}
 		]

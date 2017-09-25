@@ -6,7 +6,9 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
 	devtool: 'inline-source-map',
 	devServer: {
-		stats:'minimal'
+		contentBase: false,
+		compress: true,
+		overlay: true
 	},
 	module: {
 		rules: [

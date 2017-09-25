@@ -1,0 +1,19 @@
+.carouselSlide {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.carouselSlide div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}

@@ -1,0 +1,9 @@
+.container {
+	background-image: url('src/data/images/grafit_poloski.svg');
+	background-size: cover;
+}
+
+.sliderWrapper {
+	width: calc(100% - 200px);
+	height: 400px;
+}

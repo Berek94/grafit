@@ -1,22 +1,18 @@
 @import './common-styles/flex-helpers.css';
+@import './common-styles/animations.css';
+@import './common-styles/some-helpers.css';
 
 @font-face {
 	font-family: 'dinPro';
 	font-style: normal;
 	font-weight: 300;
-	src: url('./data/fonts/DINPro-Light.otf');
+	src: url('./data/fonts/din-pro.ttf') format('ttf');
 }
 
-@font-face {
-	font-family: 'dinPro';
-	font-style: normal;
-	font-weight: 400;
-	src: url('./data/fonts/10421.otf');
-}
-
-body {
+body, ul, li, div {
 	margin: 0;
 	padding: 0;
+	font-family: monospace;
 }
 
 #root {

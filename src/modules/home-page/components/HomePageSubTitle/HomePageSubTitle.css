@@ -1,0 +1,12 @@
+.content {
+	text-align: center;
+	margin: 20px 0 10px 0;
+	background-color: rgb(255, 240, 30);
+}
+
+.content span {
+	padding: 0 10px;
+	background-color: white;
+	font-size: 16px;
+	font-weight: bold;
+}

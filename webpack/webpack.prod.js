@@ -58,18 +58,11 @@ module.exports = merge(common, {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'common'
 		}),
-		new webpack.optimize.UglifyJsPlugin({
-			beautify: false,
-			comments: false,
-			compress: {
-				sequences     : true,
-				booleans      : true,
-				loops         : true,
-				unused      : true,
-				warnings    : false,
-				drop_console: true,
-				unsafe      : true
+		new webpack.DefinePlugin({
+			'process.env': {
+			  NODE_ENV: JSON.stringify('production')
 			}
-		})
+		}),
+		new webpack.optimize.UglifyJsPlugin()
 	]
 });
