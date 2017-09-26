@@ -4,7 +4,8 @@ import HomePageMenu from 'src/modules/home-page/components/HomePageMenu';
 import HomePageImageSlider from 'src/modules/home-page/components/HomePageImageSlider';
 import HomePageDescription from 'src/modules/home-page/components/HomePageDescription';
 import HomePageSubTitle from 'src/modules/home-page/components/HomePageSubTitle';
-import HomePageImagesPanel from 'src/modules/home-page/components/HomePageImagesPanel'
+import HomePageImagesPanel from 'src/modules/home-page/components/HomePageImagesPanel';
+import HomePagePartners from 'src/modules/home-page/components/HomePagePartners';
 
 export default function HomePage() {
 	return (
@@ -16,6 +17,7 @@ export default function HomePage() {
 			<HomePageSubTitle text="основные направления" />
 			<HomePageImagesPanel />
 			<HomePageSubTitle text="наши партнеры" />
+			<HomePagePartners />
 		</div>
 	);
 }

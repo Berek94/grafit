@@ -2,9 +2,10 @@
 	background-color: rgb(255, 240, 30);
 }
 
-.content div {
+.content > div {
 	background-color: white;
 	width: calc(100% - 280px);
 	text-align: center;
 	font-size: 16px;
+	padding: 15px;
 }
