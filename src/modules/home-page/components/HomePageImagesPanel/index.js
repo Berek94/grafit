@@ -2,46 +2,48 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './HomePageImagesPanel.css';
 
+import image1 from 'src/data/images/image1.jpg';
+import image2 from 'src/data/images/image2.jpg';
+import image3 from 'src/data/images/image3.jpg';
+import image4 from 'src/data/images/image1.jpg';
+import image5 from 'src/data/images/image2.jpg';
+import image6 from 'src/data/images/image3.jpg';
+
 export default class HomePageImagesPanel extends React.PureComponent {
+	static images = [{
+		image: image1,
+		text: 'графический дизайн',
+	}, {
+		image: image2,
+		text: 'графический дизайн',
+	}, {
+		image: image3,
+		text: 'графический дизайн',
+	}, {
+		image: image4,
+		text: 'графический дизайн',
+	}, {
+		image: image5,
+		text: 'графический дизайн',
+	}, {
+		image: image6,
+		text: 'графический дизайн',
+	}]
+
 	render() {
-		const contentClassName = classNames('g--align_center', styles.content);
+		const contentClassName = classNames('g--justify-content_space-between', styles.content);
 		const contentItemClassName = classNames(
 			'g--align_center',
 			styles.contentItem
 		)
 		return (
 			<div className={contentClassName}>
-				<div className={contentItemClassName}>
-					<div />
-					<span>графический дизайн</span>
-					<hr size="1px" width="150px" color="black" className="g--align_center" />
-					<p className="g--align_center">
-						логотип &#8226; фирменый стиль<br />
-						упаковка &#8226; этикетка &#8226; афиша<br />
-						полиграфическая продукция
-					</p>
-				</div>
-				<div className={contentItemClassName}>
-					<div />
-					<span>выставочные и рекламные конструкции</span>
-					<hr size="1px" width="150px" color="black" className="g--align_center" />
-					<p className="g--align_center">
-						выставочный стенд<br />
-						вывеска &#8226; баннер<br />
-						рекламная стойка
-					</p>
-				</div>
-				<div className={contentItemClassName}>
-					<div />
-					<span>декор и оформление</span>
-					<hr size="1px" width="150px" color="black" className="g--align_center" />
-					<p className="g--align_center">
-						дизайн-проект оформления<br />
-						пространства &#8226; фотозона<br />
-						пригласительная открытка<br />
-						кенди-бар &#8226; свадебный декор
-					</p>
-				</div>
+				{this.constructor.images.map(item =>
+					<div className={contentItemClassName}>
+						<img src={item.image} />
+						<span>{item.text}</span>
+					</div>
+				)}
 			</div>
 		);
 	}

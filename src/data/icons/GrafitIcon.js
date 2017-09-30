@@ -15,4 +15,4 @@ function GrafitIcon() {
 	)
 }
 
-export default createSVG(GrafitIcon, {viewBox: '200 -50 900 600'});
+export default createSVG(GrafitIcon, {viewBox: '250 -50 900 600'});

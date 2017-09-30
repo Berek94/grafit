@@ -1,3 +1,7 @@
 .g--cursor_pointer {
 	cursor: pointer;
 }
+
+.g--overflow_hiddden {
+	overflow: hidden;
+}

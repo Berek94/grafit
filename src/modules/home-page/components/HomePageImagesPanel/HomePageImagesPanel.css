@@ -1,18 +1,25 @@
 .content {
-	height: 350px;
-	background-color: #ebebeb;
+	padding: 0 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .contentItem {
 	position: relative;
+	width: 33%;
+	height: 50%;
 }
 
-.contentItem > div {
-	height: 350px;
-	width: 350px;
+.contentItem > img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
 	cursor: pointer;
 	opacity: 1;
 	transition: all 500ms ease-in;
+	padding: 2px 0;
 }
 
 .contentItem > span {
@@ -26,24 +33,7 @@
 	pointer-events: none;
 }
 
-.contentItem > p {
-	position: absolute;
-	bottom: -50px;
-	opacity: 0;
-	pointer-events: none;
-	transition: all 300ms ease-in;
-	text-align: start;
-}
-
-.contentItem > hr {
-	position: absolute;
-	bottom: 0;
-	opacity: 0;
-	pointer-events: none;
-	transition: all 300ms ease-in;
-}
-
-.contentItem:hover > div {
+.contentItem:hover > img {
 	opacity: 0.4;
 }
 
@@ -51,33 +41,4 @@
 	transform: translateY(0);
 	opacity: 1;
 	pointer-events: auto;
-}
-
-.contentItem:hover > p {
-	bottom: 20px;
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.contentItem:hover > hr {
-	bottom: 120px;
-	pointer-events: auto;
-	opacity: 1;
-}
-
-
-/* connect images */
-.content div:nth-child(1) > div {
-	background: url('src/data/images/873.jpg') 50%;
-	background-size: cover;
-}
-
-.content div:nth-child(2) > div {
-	background: url('src/data/images/OCERD70.jpg') 50%;
-	background-size: cover;
-}
-
-.content div:nth-child(3) > div {
-	background: url('src/data/images/spring15.jpeg') 50%;
-	background-size: cover;
 }

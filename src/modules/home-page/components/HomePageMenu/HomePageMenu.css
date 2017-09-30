@@ -2,10 +2,29 @@
 	list-style: none;
 	font-family: 'dinPro';
 	font-size: 16px;
+	display: flex;
 }
 
 .menuItem {
-	padding: 10px;
-	text-align: center;
+	position: relative;
+	padding: 5px 0;
 	cursor: pointer;
+	transition: 300ms;
+	margin: 0 15px;
+}
+
+.menuItem::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	background-color: black;
+	height: 1px;
+	left: 0;
+	transition: 300ms;
+}
+
+.menuItem:hover::after {
+	width: 100%;
+	transition: 300ms;
 }
