@@ -1,11 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import styles from './HomePageHeader.css';
+import styles from './Header.css';
 import GrafitIcon from 'src/data/icons/GrafitIcon';
-import HomePageMenu from 'src/modules/home-page/components/HomePageMenu';
+import HeaderMenu from 'src/modules/header/components/HeaderMenu';
 
-export default class HomePageHeader extends React.PureComponent {
+export default class Header extends React.PureComponent {
 	render() {
 		const className = classNames(
 			'g--display_flex g--align-items_center g--justify-content_space-between',
@@ -15,7 +15,7 @@ export default class HomePageHeader extends React.PureComponent {
 		return (
 			<div className={className}>
 				<GrafitIcon height={80} width={190} />
-				<HomePageMenu />
+				<HeaderMenu />
 			</div>
 		);
 	}

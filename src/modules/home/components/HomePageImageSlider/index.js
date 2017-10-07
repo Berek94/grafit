@@ -6,6 +6,7 @@ import image1 from 'src/data/images/image1.jpg';
 import image2 from 'src/data/images/image2.jpg';
 import image3 from 'src/data/images/image3.jpg';
 import styles from './HomePageImageSlider.css';
+import helpers from 'src/common/styles/helpers.css';
 
 export default class HomePageImageSlider extends React.PureComponent {
 	static images = [image1, image2, image3]
@@ -20,7 +21,7 @@ export default class HomePageImageSlider extends React.PureComponent {
 		autoplaySpeed: 5000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		className: 'g--overflow_hiddden',
+		className: helpers.overflowHidden,
 		pauseOnHover: false,
 		waitForAnimate: false,
 	}

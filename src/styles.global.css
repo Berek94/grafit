@@ -1,6 +1,5 @@
-@import './common-styles/flex-helpers.css';
-@import './common-styles/animations.css';
-@import './common-styles/some-helpers.css';
+@import './common/styles/flex-helpers.css';
+@import './common/styles/helpers.css';
 
 @font-face {
 	font-family: 'DINPro';

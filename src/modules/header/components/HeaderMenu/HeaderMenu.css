@@ -1,6 +1,5 @@
 .menu {
 	list-style: none;
-	font-family: 'dinPro';
 	font-size: 16px;
 	display: flex;
 }
@@ -8,9 +7,9 @@
 .menuItem {
 	position: relative;
 	padding: 5px 0;
-	cursor: pointer;
 	transition: 300ms;
 	margin: 0 15px;
+	composes: cursorPointer from 'src/common/styles/helpers.css';
 }
 
 .menuItem::after {
@@ -21,10 +20,10 @@
 	background-color: black;
 	height: 1px;
 	left: 0;
-	transition: 300ms;
+	transition: 300ms ease-in;
 }
 
 .menuItem:hover::after {
 	width: 100%;
-	transition: 300ms;
+	transition: 300ms ease-out;
 }

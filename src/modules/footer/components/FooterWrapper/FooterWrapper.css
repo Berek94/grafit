@@ -3,5 +3,5 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	composes: bgGray from "src/common-styles/colors.css";
+	composes: gray from "src/common/styles/backgroundColors.css";
 }

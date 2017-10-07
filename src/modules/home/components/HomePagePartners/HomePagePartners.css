@@ -2,7 +2,7 @@
 	position: relative;
 	height: 350px;
 	margin-top: 20px;
-	composes: bgGray from "src/common-styles/colors.css";
+	composes: gray from "src/common/styles/backgroundColors.css";
 	overflow: hidden;
 }
 

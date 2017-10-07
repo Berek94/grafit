@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import styles from './HomePageMenu.css';
+import styles from './HeaderMenu.css';
 
-export default class HomePageMenu extends React.PureComponent {
+export default class HeaderMenu extends React.PureComponent {
 	static menuItems = [
 		'О студии',
 		'Наши проекты',
