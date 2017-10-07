@@ -29,9 +29,17 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(woff|woff2|eot|ttf|otf|svg|jpg|jpeg)$/,
+				test: /\.(svg|jpg|jpeg)$/,
 				use: ['file-loader']
-			}
+			},
+			{
+				test: /\.ttf$/,
+				loader: 'url-loader',
+				options: {
+					limit: 10240,
+					mimetype: 'application/x-font-ttf'
+				}
+			},
 		]
 	},
 	plugins: [

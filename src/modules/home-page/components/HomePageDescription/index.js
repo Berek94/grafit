@@ -15,6 +15,7 @@ export default class HomePageDescription extends React.PureComponent {
 				<div>
 					<p>Дизайн-студия «GRAFIT» - это команда профессионалов влюбленных в свое дело!</p> 
 					<p>Мы любим решать  сложные задачи, создавая яркий и неповторимый продукт.</p>
+					<p>для вашего бизнеса</p>
 				</div> 
 			</div>
 		);

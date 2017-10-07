@@ -7,7 +7,10 @@ import styles from './HomePagePartners.css';
 export default class HomePagePartners extends React.PureComponent {
 	render() {
 		return (
-			<div style={{height: '200px'}} />
+			<div className={styles.content}>
+				<div className={styles.arrow} />
+				<div className={styles.title}>наши партнеры</div>
+			</div>
 		);
 	}
 }

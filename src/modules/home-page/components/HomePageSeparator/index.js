@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import styles from './HomePageSubTitle.css';
+import styles from './HomePageSeparator.css';
 
-export default class HomePageSubTitle extends React.PureComponent {
+export default class HomePageSeparator extends React.PureComponent {
 	static propTypes = {
-		text: PropTypes.string.isRequired
+		borderColor: PropTypes.string.isRequired
 	}
 
 	render() {

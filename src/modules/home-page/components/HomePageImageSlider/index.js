@@ -18,11 +18,9 @@ export default class HomePageImageSlider extends React.PureComponent {
 		prevArrow: false,
 		autoplay: true,
 		autoplaySpeed: 5000,
-		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		className: 'g--overflow_hiddden',
-		speed: 500,
 		pauseOnHover: false,
 		waitForAnimate: false,
 	}

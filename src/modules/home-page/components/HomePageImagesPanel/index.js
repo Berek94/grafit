@@ -38,8 +38,8 @@ export default class HomePageImagesPanel extends React.PureComponent {
 		)
 		return (
 			<div className={contentClassName}>
-				{this.constructor.images.map(item =>
-					<div className={contentItemClassName}>
+				{this.constructor.images.map((item, index) =>
+					<div className={contentItemClassName} key={index}>
 						<img src={item.image} />
 						<span>{item.text}</span>
 					</div>
