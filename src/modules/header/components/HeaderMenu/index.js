@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-
+import Link from 'src/common/components/Link';
 import styles from './HeaderMenu.css';
 
 export default class HeaderMenu extends React.PureComponent {
@@ -19,7 +19,7 @@ export default class HeaderMenu extends React.PureComponent {
 		return (
 			<ul className={className}>
 				{this.constructor.menuItems.map(item =>
-					<li className={styles.menuItem} key={item}>{item}</li>
+					<Link path="/projects" key={item}>{item}</Link>
 				)}
 			</ul>
 		);

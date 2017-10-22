@@ -13,7 +13,7 @@ export default class Loader extends React.PureComponent {
 	componentDidMount() {
 		setTimeout(() => {
 			this.setState({show: false});
-		}, 5000);
+		}, 2000);
 	}
 
 	render() {

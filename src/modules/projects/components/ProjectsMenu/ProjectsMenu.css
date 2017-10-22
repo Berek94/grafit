@@ -1,0 +1,32 @@
+.wrapper {
+	display: flex;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	min-width: 210px;
+	justify-content: space-around;
+}
+
+.content > div > a {
+	margin: 0;
+}
+
+.images {
+	display: flex;
+	width: 100%;
+}
+
+.images > div {
+	max-width: 50%;
+}
+
+.images > div > img {
+	max-width: 99%;
+	max-height: 100%;
+}
+
+.menuItem + .menuItem {
+	margin-top: 5px;
+}

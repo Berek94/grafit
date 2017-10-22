@@ -1,5 +1,6 @@
 @import './common/styles/flex-helpers.css';
 @import './common/styles/helpers.css';
+@import '~react-responsive-carousel/lib/styles/carousel.min.css';
 
 @font-face {
 	font-family: 'DINPro';
@@ -15,7 +16,7 @@
 	src: url('./data/fonts/monaco.ttf') format('truetype');
 }
 
-body {
+body, ul {
 	margin: 0;
 	padding: 0;
 }
